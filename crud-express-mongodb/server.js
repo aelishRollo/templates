@@ -8,5 +8,5 @@ app.listen(3000, function () {
 
 
 app.get('/', (req,res) => {     //determines what will go on the web page
-    res.send('Hello, world')
+    res.sendFile(__dirname + '/index.html')
 })
